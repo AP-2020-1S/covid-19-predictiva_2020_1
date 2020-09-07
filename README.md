@@ -1,59 +1,52 @@
 # Pronostico de la evolución de casos activos de SARS-CoV-2 en Colombia
 
 
-## Introducción
+## Cuaderno
 
-Colombia no ha sido ajena a la crisis generada por la aparición del síndrome respiratorio agudo severo (COVID-19), enfermedad que ha llevado al limite a la sociedad debido a su impacto y a las medidas  disruptivas, rigurosas y extremas que han tomado los gobiernos para controlar su transmisión, desde su reconocimiento como una pandemia mundial el 11 de marzo de 2020. Uno los principales elementos para la toma de decisiones ha sido el pronóstico y la modelación del total de casos diagnosticados, el total de casos activos, la cantidad de casos recuperados y las muertes esperadas, tanto en el corto como en el largo plazo.
+El cuaderno de colab realizado para el análisis de datos del proyecto se encuentra en este [link](https://colab.research.google.com/drive/12hCvQw-_B6mOqrugQnW1OA2x_tIYxdg_?usp=sharing) (Acceder desde cuenta unal). Este mismo también se encuentra subido en el repositorio como ProyectoCovid.ipynb, para correrlo localmente, en caso de correrlo localmente se necesitan los siguientes paquetes instalados: 
 
-En la literatura más relevante, la evolución de casos en general ha sido abordada de dos formas diferentes: la primera es mediante el uso de modelos SIR y sus variaciones (Susceptible-Infectado-Recuperado), que son básicamente modelos de simulación basados en supuestos muy fuertes sobre la evolución de la enfermedad. la segunda aproximación corresponde al uso de metodologías de pronóstico de series de tiempo (tanto estadísticas como de inteligencia artificial) para pronosticar los nuevos casos activos o los casos confirmados; sin embargo, esta aproximación también supone fuertes hipótesis sobre como se comporta la enfermedad.
+*   sodapy
+*   pandas
+*   matplotlib.pyplot
+*   sklearn
 
-## Objetivo
-
-El objetivo de este proyecto es la predicción de corto y mediano plazo de el total de casos confirmados, los nuevos casos, los casos activos, recuperados y muertes para las 5 principales ciudades de Colombia, utilizando técnicas estadísticas, de inteligencia artificial o modelos híbridos.
-
-## Información utilizada
-
-Use la información disponible en www.datos.gov.co.
-
-## Metodología
-
-Use la metodología basada en las siguientes fases o dimensiones del problema (ver notas de clase).
-
-1. Definición del problema real.
-2. Definición del problema de analítica.
-3. Datos.
-4. Metodologías propuestas.
-5. Desarrollo de los modelos.
-6. Despliegue de los resultados (producto de datos)
-7. Gestión del ciclo de vida del producto de datos. 
-
-Puede consultar las metodologías CRISP-DM, ASUM-DM u otras similares como complemento a las fases especificadas.
+En este se encuentra todo el procedimiento para  la limpieza, análisis, y predicción propuesta para los datos de Covid-19 otorgados por el gobierno colombiano. 
 
 
-## Requerimientos
+## Producto de Datos 
 
-Los requerimientos del sistema son los siguientes:
+Para el producto de datos se hizo uso de la librería de python Streamlit, que permite crear fácil y rápidamente aplicaciones de datos. En esta aplicación se exponen los análisis realizados, comenzando con un dashboard realizado en Google Data Studio para ver el análisis exploratorio de los datos y después se presentan todo el proceso y resultado del modelo predictivo
 
-* El producto de datos propuesto debe descargar la última información dispobile de forma automática cada vez que se ejecute. 
+Para la instalación del producto de datos en el equipo se sugiere la versión 3,7 de python o superiores y comenzar la instalación con la creación de un entorno virtual en el PC local como se ve en la [documentación](https://docs.python.org/es/3/tutorial/venv.html) 
 
-* La limpieza de datos, recalibración de los modelos, etc, deben ejecutarse automaticamente sin intervención humana. Es decir, el usuario ejecuta unicamente la rutina principal y todo el sistema se actualiza automaticamente.
+Teniendo listo el entorno virtual los siguientes pasos:
 
-* Debe presentar los resultados en un dashboard que use GitHub pages (recuerde que puede utilizar jinja2, HTML, etc)
+'git clone https://github.com/AP-2020-1S/covid-19-predictiva_2020_1.git' 
 
-* Debe presentar intervalos de confianza para los pronósticos.
-
-* Debe presentar métricas de calibración para la información histórica.
+dentro de la carpeta donde instalaste el entorno virtual
 
 
-## Documentación
+Se deben hacer las instalaciones correspondientes a los paquetes requeridos por la aplicación
 
-El producto de datos debe contener información sobre los pasos de la metodología empleada, explicando las distintas fases. Recuerde que debe ganar la confianza de las personas que usarán los resultados del modelo.
+`pip3 install streamlit`
 
-## Entrega
+`pip3 install sodapy`
 
-El repo debe contener el producto desarrollado.
+`pip3 install pandas`
+
+`pip3 install matplotlib`
+
+`pip3 install sklearn`
 
 
+Finalmente queda listo para ver la aplicación de forma local corriendo el siguiente comando
+
+`streamlit run data.py`
+
+La aplicación se abre por defecto en el navegador predeterminado el en puerto:
+
+
+http://localhost:8501/
 
 
 
