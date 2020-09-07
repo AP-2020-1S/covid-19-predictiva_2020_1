@@ -25,9 +25,9 @@ Teniendo listo el entorno virtual los siguientes pasos:
 
 Se deben hacer las instalaciones correspondientes a los paquetes requeridos por la aplicación
 
-'pip3 install streamlit'
+`pip3 install streamlit`
 
-'pip3 install sodapy'
+`pip3 install sodapy`
 
 'pip3 install pandas'
 
