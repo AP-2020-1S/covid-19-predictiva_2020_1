@@ -49,4 +49,5 @@ La aplicación se abre por defecto en el navegador predeterminado el en puerto:
 http://localhost:8501/
 
 
+Para una visualización rápida del producto de datos presentamos un [video](https://github.com/AP-2020-1S/covid-19-predictiva_2020_1/blob/master/streamlit-data-2020-09-07-09-09-89.webm.mp4) que muestra el contenido de la aplicación y que se puede descargar de este mismo repositorio. [video](https://github.com/AP-2020-1S/covid-19-predictiva_2020_1/blob/master/streamlit-data-2020-09-07-09-09-89.webm.mp4)
 
