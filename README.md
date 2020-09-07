@@ -21,7 +21,10 @@ Para la instalación del producto de datos en el equipo se sugiere la versión 3
 
 Teniendo listo el entorno virtual los siguientes pasos:
 
-'git clone https://github.com/AP-2020-1S/covid-19-predictiva_2020_1.git' dentro de la carpeta donde instalaste el entorno virtual
+'git clone https://github.com/AP-2020-1S/covid-19-predictiva_2020_1.git' 
+
+dentro de la carpeta donde instalaste el entorno virtual
+
 
 Se deben hacer las instalaciones correspondientes a los paquetes requeridos por la aplicación
 
@@ -29,18 +32,19 @@ Se deben hacer las instalaciones correspondientes a los paquetes requeridos por 
 
 `pip3 install sodapy`
 
-'pip3 install pandas'
+`pip3 install pandas`
 
-'pip3 install matplotlib'
+`pip3 install matplotlib`
 
-'pip3 install sklearn' 
+`pip3 install sklearn`
 
 
 Finalmente queda listo para ver la aplicación de forma local corriendo el siguiente comando
 
-'streamlit run data.py'
+`streamlit run data.py`
 
 La aplicación se abre por defecto en el navegador predeterminado el en puerto:
+
 
 http://localhost:8501/
 
