@@ -21,7 +21,7 @@ Para la instalación del producto de datos en el equipo se sugiere la versión 3
 
 Teniendo listo el entorno virtual los siguientes pasos:
 
-'git clone https://github.com/AP-2020-1S/covid-19-predictiva_2020_1.git' 
+`git clone https://github.com/AP-2020-1S/covid-19-predictiva_2020_1.git` 
 
 dentro de la carpeta donde instalaste el entorno virtual
 
